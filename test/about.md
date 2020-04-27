@@ -1,6 +1,7 @@
 ---
 layout: article
 titles:
+  # @start locale config
   en      : &EN       About
   en-GB   : *EN
   en-US   : *EN
@@ -15,11 +16,12 @@ titles:
   zh-HK   : *ZH_HANT
   ko      : &KO       소개
   ko-KR   : *KO
+  # @end locale config
 key: page-about
 ---
 
 Just say something about yourself. :+1:
 
-{% highlight javascript %}
+<!-- {% highlight javascript %}
 (() => console.log('hello, world!'))();
-{% endhighlight %}
+{% endhighlight %} -->
