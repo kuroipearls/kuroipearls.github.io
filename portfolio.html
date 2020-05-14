@@ -2,6 +2,21 @@
 layout: portfolio
 ---
 
-<h1>This is example of H1 !</h1>
-<h2>Hi, this is portfolio !</h2>
-<h3>And this is example of H3.</h3>
+<h2>Research Experiences</h2>
+<h3>Self-supervised Image Denoising on Single Noisy Images (2020 - ongoing)</h3>
+<p>This research aimed to solve image denoising problem using a self-supervised approach, which doesn't require clean target images. This approach is important since in real-life scenario, clean images are not always available.</p>
+<p>In this case, the proposed method is divided into 2 parts. The first part is applying the mixture of residual network and densenet to produce the prior clean target representation. After that, the second part is to do Bayesian inference using the previous obtained prior, to produce posterior mean estimation which resembles with the clean image representation that we seek to restore. This method currently achieved better results than state-of-the-art methods in terms of image quality assessment.</p>
+
+<h3>ODBTC Image Reconstruction using Self-Attention Generative Adversarial Network (2019)</h3>
+<p>This research aimed to perform image reconstruction from ordered dithering block truncation coding (ODBTC), which is one of the image compression techniques that often left grainy spots as the result of extreme quantization.</p>
+<p>To solve this problem, generative adversarial network (GAN) is applied together with self-attention mechanism. This approach showed better results as it could the previous state-of-the-art conventional method, both from quantitative results and perceptual results.</p>
+
+<h3>Twitter Sentiment Analysis of 2017 DKI Jakarta's Election (2017)</h3>
+<p>This research aimed to analyse sentiments on DKI Jakarta's (Indonesia capital city) governor candidates in 2017 election on social media using natural language processing (NLP) and machine learning, specifically support vector machine (SVM).</p>
+<p>Results showed that sentiments among candidates' supporters can be classified into 3 major sentiments, which were positive, negative, and neutral.</p>
+
+<h2>Personal Projects</h2>
+<h3>Image Compression Kit (Python packages)</h3>
+<p>This is a simple python packages which consists of some image compression methods: halftoning and block truncation coding (BTC). Halftoning is a method to quantize an image into 0 or 1 (black or white), which is often used in printing application. Block truncation coding is quite similar with halftoning, it also quantizes an image into 2 values, but in this case, it's either the maximum value or minimum value (which is determined based on a formula).</p>
+<p>For halftoning, this package covers several popular halftoning methods: error diffusion (ED), ordered dithering (OD), dot diffusion (DD), and direct binary search (DBS) using its efficient implementation.</p>
+<p>As for BTC, this package also covers several popular BTC methods: basic BTC, error diffusion BTC (EDBTC), ordered dithering BTC (ODBTC), and dot diffusion BTC (DDBTC).</p>
