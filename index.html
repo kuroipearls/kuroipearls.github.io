@@ -9,21 +9,21 @@ layout: home
 <h2>Working Experiences</h2>
 <p>These are my working experiences.</p>
 <ul>
-	<li>Kaikutek Inc. - Machine Learning Engineer (September 2020 - now)</li>
+	<li>Kaikutek Inc. （ 開酷科技股份有限公司 ） - Machine Learning Engineer (September 2020 - now)</li>
 	<p>I've been working as a member of System team for a year. I have managed several projects and tasks during my time in here, as listed below.</p>
 	<ol>
 		<li>Improving Robustness of Real-Time Gesture Classification</li>
-		<p>Me and my team is constantly striving to improve the real-time gesture classification, as this topic is very challenging. One of the reasons why real-time time-series classification can be quite challenging is because there are a lot of factors to consider when we train the neural-network based model. Some factors that we managed to observe are: number of frames (timesteps) to unfold, out-of-distribution background data, and the training ordered steps.</p>
+		<p align="justify">Me and my team is constantly striving to improve the real-time gesture classification, as this topic is very challenging. One of the reasons why real-time time-series classification can be quite challenging is because there are a lot of factors to consider when we train the neural-network based model. Some factors that we managed to observe are: number of frames (timesteps) to unfold, out-of-distribution background data, and the training ordered steps.</p>
 		<li>Implementation of Lightweight Neural Network and Verification on FPGA Platform</li>
-		<p>I implemented lightweight neural network which can be trained in few-shot style (via contrastive loss) and capable to classify simple gestures.  After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
+		<p align="justify">I implemented lightweight neural network which can be trained in few-shot style (via contrastive loss) and capable to classify simple gestures.  After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
 		<li>Designing Training Mechanism for Gesture Classification using Coordinates Input Feature</li>
-		<p>I designed the training mechanism for gesture classification using coordinates input feature which can be quite challenging since in this case the information is more limited. The input is representative, but it's more random. Therefore, it required extra steps to handle this kind of situation. Furthermore, neural network can be quite difficult to train using limited input features.</p>
+		<p align="justify">I designed the training mechanism for gesture classification using coordinates input feature which can be quite challenging since in this case the information is more limited. The input is representative, but it's more random. Therefore, it required extra steps to handle this kind of situation. Furthermore, neural network can be quite difficult to train using limited input features.</p>
 		<li>Designing Fixed-Point Network Model for Coordinates Input Feature Based Model and Verification on FPGA Platform</li>
-		<p>I designed the fixed-point network model for coordinates input feature – based model. This step is important since the way deep learning library is trained requires floating-point data type in order to calculate the gradient & backpropagation. However, if we want to implement our network into the chip, we need to transfer this into integer data type, since hardware can only process integer data. Therefore, we as the System team need to do the final step of development which is transferring our network model to fixed-point (integer data type) model before sending this into Digital Design team. After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
+		<p align="justify">I designed the fixed-point network model for coordinates input feature – based model. This step is important since the way deep learning library is trained requires floating-point data type in order to calculate the gradient & backpropagation. However, if we want to implement our network into the chip, we need to transfer this into integer data type, since hardware can only process integer data. Therefore, we as the System team need to do the final step of development which is transferring our network model to fixed-point (integer data type) model before sending this into Digital Design team. After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
 		<li>Designing Few-Shot Learning Mechanism via Transfer Learning for Dual Network</li>
-		<p>This is a project to explore another possibility of few-shot learning by utilizing transfer learning method. By sharing and freezing feature extractor part, the network can focus more to learn the temporal part. This network is designed to be co-exist together with identical counterpart model, hence it’s called dual network. Since the extractor part is shared with its identical counterpart model, the number of parameters is reduced. </p>
+		<p align="justify">This is a project to explore another possibility of few-shot learning by utilizing transfer learning method. By sharing and freezing feature extractor part, the network can focus more to learn the temporal part. This network is designed to be co-exist together with identical counterpart model, hence it’s called dual network. Since the extractor part is shared with its identical counterpart model, the number of parameters is reduced. </p>
 		<li>Analyzing and Improving Augmentation Methods for Temporal Matching Gesture Classification Model </li>
-		<p>My task is to analyze the effectiveness of the current augmentation methods for temporal matching gesture classification model. Therefore, I need to design an evaluation method to check their performance. After determining their performance, I can try different augmentation methods which can improve the classification result.</p>
+		<p align="justify">My task is to analyze the effectiveness of the current augmentation methods for temporal matching gesture classification model. Therefore, I need to design an evaluation method to check their performance. After determining their performance, I can try different augmentation methods which can improve the classification result.</p>
 	</ol>
 </ul>
 <ul>
@@ -51,13 +51,13 @@ layout: home
 		<li>Deep Learning</li>
 		<ul>
 			<li>Python (experienced), C++ (knowledgeable)</li>
-			<li>Deep learning framework: Tensorflow & Keras (experienced), PyTorch (knowledgeable)</li>
+			<li>Deep learning framework: Tensorflow & Keras (experienced), PyTorch (currently using)</li>
 			<li>Experienced with Tensorflow Lite (Android) & TF-TRT (integration with NVIDIA TensorRT)</li>
 			<li>Image Processing Libraries & Tools: OpenCV, PIL, Scikit Image</li>
 		</ul>
 		<li>Machine Learning & Big Data</li>
 		<ul>
-			<li>R, Python (experienced)</li>
+			<li>R, Python (experienced), Matlab (knowledgeable)</li>
 			<li>Machine Learning tools: caret (R), scikit learn (Python)</li>
 			<li>Database: MySQL, Oracle</li>
 			<li>Big Data Technologies: Hadoop, Spark (knowledgeable)</li>
@@ -72,6 +72,7 @@ layout: home
 	<li><b>Other Technical Skills</b></li>
 	<ul>
 		<li>Experienced with Git (Github), virtual environment, Anaconda (both in Windows & Linux), Docker</li>
+		<li>Familiar with integer bit-true concept for hardware implementation of neural network model</li>
 		<li>Experienced with Kaggle & Codeforces competitions</li>
 		<li>Experienced with CUDA integration (GPU) for Deep Learning computation</li>
 		<li>Able to work using Linux and Windows environment</li>
@@ -82,6 +83,7 @@ layout: home
 	<ul>
 		<li>Deep Learning and its applications</li>
 		<ul>
+			<li>Temporal Problem Classification (LSTM, RNN) - current focus</li>
 			<li>Image Restoration & Reconstruction (Image denoising)</li>
 			<li>Image Translation (CycleGAN, Pix2pix)</li>
 			<li>Image Super Resolution (SRGAN)</li>
@@ -121,7 +123,7 @@ layout: home
 	<li>Twitter sentiment analysis of 2017 DKI Jakarta's local election - <a href="https://gist.github.com/kuroipearls/da01e89892ee29198278a917c355c88a">notebook</a></li>
 </ul>
 
-<h2>Project Experience</h2>
+<h2>Project Experience (During Study)</h2>
 <p>These are my project experiences.</p>
 <ul>
 	<li>An entertainment company sales recommendation.</li>
@@ -144,6 +146,6 @@ layout: home
 
 <h2>Current Interest</h2>
 <ul>
-	<li>Image restoration & reconstruction</li>
-	<li>Low-level vision</li>
+	<li>Temporal Model Neural Network</li>
+	<li>Variational Bayesian Inference</li>
 </ul>
