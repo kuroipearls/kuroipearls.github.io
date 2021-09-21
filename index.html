@@ -6,6 +6,32 @@ layout: home
 
 <p align="justify">Previously, I conducted some research in deep learning field during my master degree, especially in low-level vision (image restoration to be precise). During my undergraduate study, I also did some research about Natural Language Processing (NLP) using machine learning approach. </p>
 
+<h2>Working Experiences</h2>
+<p>These are my working experiences.</p>
+<ul>
+	<li>Kaikutek Inc. - Machine Learning Engineer (September 2020 - now)</li>
+	<p>I've been working as a member of System team for a year. I have managed several projects and tasks during my time in here, as listed below.</p>
+	<ol>
+		<li>Improving Robustness of Real-Time Gesture Classification</li>
+		<p>Me and my team is constantly striving to improve the real-time gesture classification, as this topic is very challenging. One of the reasons why real-time time-series classification can be quite challenging is because there are a lot of factors to consider when we train the neural-network based model. Some factors that we managed to observe are: number of frames (timesteps) to unfold, out-of-distribution background data, and the training ordered steps.</p>
+		<li>Implementation of Lightweight Neural Network and Verification on FPGA Platform</li>
+		<p>I implemented lightweight neural network which can be trained in few-shot style (via contrastive loss) and capable to classify simple gestures.  After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
+		<li>Designing Training Mechanism for Gesture Classification using Coordinates Input Feature</li>
+		<p>I designed the training mechanism for gesture classification using coordinates input feature which can be quite challenging since in this case the information is more limited. The input is representative, but it's more random. Therefore, it required extra steps to handle this kind of situation. Furthermore, neural network can be quite difficult to train using limited input features.</p>
+		<li>Designing Fixed-Point Network Model for Coordinates Input Feature Based Model and Verification on FPGA Platform</li>
+		<p>I designed the fixed-point network model for coordinates input feature – based model. This step is important since the way deep learning library is trained requires floating-point data type in order to calculate the gradient & backpropagation. However, if we want to implement our network into the chip, we need to transfer this into integer data type, since hardware can only process integer data. Therefore, we as the System team need to do the final step of development which is transferring our network model to fixed-point (integer data type) model before sending this into Digital Design team. After that, I need to co-work with Digital Design team to make sure their implementation on the chip (later) are correct by verifying their implementation on FPGA platform first.</p>
+		<li>Designing Few-Shot Learning Mechanism via Transfer Learning for Dual Network</li>
+		<p>This is a project to explore another possibility of few-shot learning by utilizing transfer learning method. By sharing and freezing feature extractor part, the network can focus more to learn the temporal part. This network is designed to be co-exist together with identical counterpart model, hence it’s called dual network. Since the extractor part is shared with its identical counterpart model, the number of parameters is reduced. </p>
+		<li>Analyzing and Improving Augmentation Methods for Temporal Matching Gesture Classification Model </li>
+		<p>My task is to analyze the effectiveness of the current augmentation methods for temporal matching gesture classification model. Therefore, I need to design an evaluation method to check their performance. After determining their performance, I can try different augmentation methods which can improve the classification result.</p>
+	</ol>
+</ul>
+<ul>
+	<li>Sebelas Maret University's Bureau of Administration and Information System Design - Software Developer (January 2016 - December 2016)</li>
+	<p>In this job, my task was to maintain Sebelas Maret University's websites in check and always available, and also to check & maintain the database,
+	in case there's trouble. </p>
+</ul>
+
 <h2>Education</h2>
 <ul>
 	<li><b>M.Sc. in National Taiwan University of Science and Technology - 國立台灣科技大學 (2018 - 2020)</b></li>
@@ -93,14 +119,6 @@ layout: home
 	<li>Dense in Dense Network with Attention Module (DiDNT) with Blind Image Denoising - <a href="https://gist.github.com/kuroipearls/6ebeec7797d1f73e14352fd429080622">notebook</a></li>
 	<li>ODBTC (Ordered Dithering Block Truncation Coding) reconstruction</li>
 	<li>Twitter sentiment analysis of 2017 DKI Jakarta's local election - <a href="https://gist.github.com/kuroipearls/da01e89892ee29198278a917c355c88a">notebook</a></li>
-</ul>
-
-<h2>Working Experiences</h2>
-<p>These are my working experiences.</p>
-<ul>
-	<li>Sebelas Maret University's Bureau of Administration and Information System Design - Software Developer (January 2016 - December 2016)</li>
-	<p>In this job, my task was to maintain Sebelas Maret University's websites in check and always available, and also to check & maintain the database,
-	in case there's trouble. </p>
 </ul>
 
 <h2>Project Experience</h2>
